@@ -4,7 +4,6 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Collection;
-//import java.util.Set;
 
 
 public class ServerModelTest {
@@ -20,11 +19,6 @@ public class ServerModelTest {
         model = new ServerModel();
     }
 
-    /**
-     * Here is an example test that checks the functionality of your
-     * changeNickname error handling. Each line has commentary directly above
-     * it which you can use as a framework for the remainder of your tests.
-     */
     @Test
     public void testInvalidNickname() {
         // A user must be registered before their nickname can be changed,
@@ -522,14 +516,5 @@ public class ServerModelTest {
        assertEquals(expected, actual, "Broadcast");
    }
 
-
-   /*
-    * Your TAs will be manually grading the tests that you write below this
-    * comment block. Don't forget to test the public methods you have added to
-    * your ServerModel class, as well as the behavior of the server in
-    * different scenarios.
-    * You might find it helpful to take a look at the tests we have already
-    * provided you with in Task4Test, Task3Test, and Task5Test.
-    */
 }
 
