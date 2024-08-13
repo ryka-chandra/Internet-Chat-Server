@@ -1,7 +1,5 @@
 # Internet-Chat-Server
 
-## Overview
-
 This project involves building an internet chat server in Java. The server manages communication between multiple clients, who can join channels, send messages, change nicknames, and manage user interactions. The server maintains the internal state of connected users and channels using a `TreeMap` data structure.
 
 ## Features
