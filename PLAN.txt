@@ -1,11 +1,6 @@
 =:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-CIS 1200 HW07 README
-PennKey: 69223261
+PLANS FOR IMPLEMENTATION(S) AND IMPROVEMENTS
 =:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-
-============
-=: Task 2 :=
-============
 
 - Do you plan on creating any new classes in your design? If so, what classes
   are you making, what do they store, and what behaviors do they have?
@@ -54,41 +49,6 @@ PennKey: 69223261
   This choice is particularly beneficial when querying and managing these collections
   based on their respective keys.
 
-============
-=: Task 3 :=
-============
-
-- Did you make any changes to your design while doing this task? Why?
-
-  I didn't feel like I had to change any part of my design for this Task. The design's
-  robustness in handling user-related functionalities is evident in the implementation of
-  registerUser, deregisterUser, and changeNickname. The userMap accurately maintains user ID to
-  nickname mappings. Also, the consideration of channel notifications and server state updates
-  in deregisterUser aligns with the original design's encapsulation. The existing structure,
-  (including the validation checks in changeNickname and the use of Broadcast objects),
-  made the design unnecessary to change.
-
-
-============
-=: Task 4 :=
-============
-
-- Did you make any changes to your design while doing this task? Why?
-
-  I found that I, thankfully, did not have to make any changes to my design  when doing this task.
-  Using TreeMap for userMap and channelMap, along with a dedicated Channel class, ensured a
-  design model where the map structures provided efficient lookup and management
-  of user and channel information. The sorted order simplifies tasks, such as creating and
-  joining channels, while the key-values made organized mapping for user and
-  channel details. TreeMap's modifiability and navigable operations further enhance the
-  implementation of these functionalities by supporting easy update if need be (such as when
-  leaving the channel).
-
-
-============
-=: Task 5 :=
-============
-
 - How do you plan on keeping track of which channels are invite-only?
 
   The privacy status of channels is tracked through the isPrivate boolean field in
@@ -104,21 +64,3 @@ PennKey: 69223261
   I will slightly modify the Channel class so that it now contains a method that will
   determine if the Channel is private or not. If it is, then only the owner can add and
   remove a user from the Channel, otherwise it does not matter.
-
-
-============
-=: Task 6 :=
-============
-
-- Did you have to make any changes to your design in Task 6? Why?
-
-  No, there were no changes that needed to be made to the design in Task 6. The
-  existing implementation was structured efficiently, minimizing redundancy, duplicate
-  code, and convoluted functions. The design already prioritized readability and
-  maintainability, making it unnecessary to introduce major adjustments or additional helpers.
-
-- If you were to redo this assignment, what changes (if any) would you make in
-  how you designed your code?
-
-  If I were to redo this I would write more functions that would handle smaller
-  parts of my code. This would make the code and processes more efficient to run.
